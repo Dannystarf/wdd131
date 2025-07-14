@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A beautiful collection of temple images">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <script src="script/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="site-title">Temple Album</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#old">Old</a></li>
+                    <li><a href="#new">New</a></li>
+                    <li><a href="#large">Large</a></li>
+                    <li><a href="#small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+        <div class="temple-grid">
+            <figure>
+                <img src="images/san_diego.jpg?height=300&width=400" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt_lake.jpg?height=300&width=400" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo_city.webp?height=300&width=400" alt="Provo City Center Temple" loading="lazy">
+                <figcaption>Provo City Center</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mesa_arizona.webp?height=300&width=400" alt="Mesa Arizona Temple" loading="lazy">
+                <figcaption>Mesa Arizona</figcaption>
+            </figure>
+            <figure>
+                <img src="images/los_angeles.jpg?height=300&width=400" alt="Los Angeles California Temple" loading="lazy">
+                <figcaption>Los Angeles California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/oakland_california.jpg?height=300&width=400" alt="Oakland California Temple" loading="lazy">
+                <figcaption>Oakland California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/portland_oregon.webp?height=300&width=400" alt="Portland Oregon Temple" loading="lazy">
+                <figcaption>Portland Oregon</figcaption>
+            </figure>
+            <figure>
+                <img src="images/seattle_washington.webp?height=300&width=400" alt="Seattle Washington Temple" loading="lazy">
+                <figcaption>Seattle Washington</figcaption>
+            </figure>
+            <figure>
+                <img src="images/denver_colorado.webp?height=300&width=400" alt="Denver Colorado Temple" loading="lazy">
+                <figcaption>Denver Colorado</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> Temple Album | All Rights Reserved</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p>Contact: dannystar926@gmail.com | Phone: (234) 81-3512-7844</p>
+        </div>
+    </footer>
+</body>
+
+</html>
