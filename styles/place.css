@@ -1,12 +1,12 @@
 :root {
     --primary-green: #008751;
-    --secondary-green: #00A651;
-    --accent-white: #FFFFFF;
+    --secondary-green: #00a651;
+    --accent-white: #ffffff;
     --text-dark: #333333;
     --text-light: #666666;
-    --background-light: #FFFFFF;
-    --background-gray: #F5F5F5;
-    --border-color: #DDDDDD;
+    --background-light: #ffffff;
+    --background-gray: #f5f5f5;
+    --border-color: #dddddd;
 }
 
 .main-image {
@@ -25,7 +25,7 @@
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--background-light);
