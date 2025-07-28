@@ -1,0 +1,124 @@
+@media (min-width: 768px) {
+
+    header h1 {
+        font-size: 3rem;
+        padding: 1.5rem 0;
+    }
+
+    .hero {
+        position: relative;
+        margin-bottom: 2rem;
+        min-height: 500px;
+        overflow: hidden;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    main {
+        padding: 0 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 2;
+        margin-top: -400px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        padding: 2rem;
+    }
+
+    .data-section {
+        grid-column: 1;
+        margin-bottom: 0;
+        background-color: rgba(245, 245, 245, 0.95);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .data-section h2 {
+        font-size: 1.4rem;
+        background-color: var(--primary-green);
+    }
+
+    .weather-section {
+        grid-column: 3;
+        margin-bottom: 0;
+        background-color: rgba(245, 245, 245, 0.95);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .weather-heading {
+        font-size: 1.4rem;
+        background-color: var(--primary-green);
+    }
+
+    .weather-heading::after {
+        content: "☀️";
+        display: inline-block;
+        margin-left: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .data-list,
+    .weather-list {
+        gap: 0.75rem;
+    }
+
+    .data-list dt,
+    .weather-list dt {
+        font-size: 1rem;
+    }
+
+    .data-list dd,
+    .weather-list dd {
+        font-size: 1rem;
+        margin-left: 1.5rem;
+    }
+
+    footer {
+        margin-top: 3rem;
+        padding: 1.5rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* Large desktop adjustments */
+@media (min-width: 1200px) {
+    .hero-image {
+        height: 600px;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .content-wrapper {
+        margin-top: -500px;
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+    main {
+        padding: 0 3rem;
+    }
+}

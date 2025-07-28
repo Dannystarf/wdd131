@@ -1,0 +1,162 @@
+:root {
+    --primary-green: #008751;
+    --secondary-green: #00A651;
+    --accent-white: #FFFFFF;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --background-light: #FFFFFF;
+    --background-gray: #F5F5F5;
+    --border-color: #DDDDDD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+header {
+    background-color: var(--primary-green);
+    color: var(--accent-white);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+.content-wrapper {
+    max-width: 100%;
+}
+
+.data-section {
+    background-color: var(--background-gray);
+    border: 2px solid var(--primary-green);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.data-section h2 {
+    background-color: var(--primary-green);
+    color: var(--accent-white);
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.data-list {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.data-list dt {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.data-list dd {
+    color: var(--text-light);
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.weather-section {
+    background-color: var(--background-gray);
+    border: 2px solid var(--primary-green);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.weather-heading {
+    background-color: var(--primary-green);
+    color: var(--accent-white);
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+}
+
+.weather-heading::after {
+    display: none;
+}
+
+.weather-icon-mobile {
+    display: block;
+    margin: 0 auto 1rem auto;
+    color: var(--primary-green);
+}
+
+.weather-list {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.weather-list dt {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.weather-list dd {
+    color: var(--text-light);
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-green);
+    color: var(--accent-white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for larger mobile screens */
+@media (min-width: 480px) {
+    .hero-image {
+        max-height: 400px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 0 2rem;
+    }
+}
