@@ -6,7 +6,7 @@
     }
 
     body {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto';
         line-height: 1.6;
         color: var(--text-dark);
         background: url('../images/nigeria_landscape.webp') no-repeat center center fixed;
