@@ -1,8 +1,8 @@
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     header h1 {
         font-size: 3rem;
         padding: 1.5rem 0;
-    }
+    } */
 
     body {
         font-family: "Roboto";
@@ -94,7 +94,7 @@
     footer p {
         font-size: 1rem;
     }
-}
+/* } */
 
 /* Large desktop adjustments */
 @media (min-width: 1200px) {
