@@ -9,6 +9,15 @@
     --border-color: #DDDDDD;
 }
 
+.main-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +25,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--background-light);
@@ -33,19 +42,6 @@ header h1 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
-}
-
-.hero {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-height: 300px;
-    object-fit: cover;
 }
 
 main {
@@ -148,7 +144,7 @@ footer p {
 
 /* Responsive adjustments for larger mobile screens */
 @media (min-width: 480px) {
-    .hero-image {
+    .main-image {
         max-height: 400px;
     }
 

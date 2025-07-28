@@ -5,21 +5,16 @@
         padding: 1.5rem 0;
     }
 
-    .hero {
-        position: relative;
-        margin-bottom: 2rem;
-        min-height: 500px;
-        overflow: hidden;
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        color: var(--text-dark);
+        background: url('../images/nigeria_landscape.webp') no-repeat center center fixed;
+        background-size: cover;
     }
 
-    .hero-image {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
+    .main-image {
+        display: none;
     }
 
     main {
@@ -31,7 +26,7 @@
     .content-wrapper {
         position: relative;
         z-index: 2;
-        margin-top: -400px;
+        margin-top: 0;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         gap: 2rem;
@@ -104,16 +99,11 @@
 
 /* Large desktop adjustments */
 @media (min-width: 1200px) {
-    .hero-image {
+    .main-image {
         height: 600px;
     }
 
-    .hero {
-        min-height: 600px;
-    }
-
     .content-wrapper {
-        margin-top: -500px;
         gap: 3rem;
         padding: 3rem;
     }
